@@ -1,0 +1,393 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-family: 'Poppins', sans-serif;
+
+}
+body {
+    width: 100%;
+    color: white;
+    background: linear-gradient(20deg, rgb(7, 75, 102), rgb(107, 202, 226), rgb(86, 224, 160));
+    background-repeat: no-repeat;
+    background-size:200vh;
+    ;
+}
+
+.header{
+   width: 100%;
+    font-size: 1.9rem;
+    background: rgba(0, 0, 0, 0.849);
+    position: fixed;
+    display:block;
+
+
+}
+
+.nav-items{
+    align-items:center ;
+    display: flex;
+    gap: 5rem;
+}
+.nav{
+
+    padding: 1rem;
+    margin-left: 4rem;
+
+
+
+
+}
+.nav ul li{
+    list-style: none;
+
+
+
+}
+.nav ul{
+    display: flex;
+    gap: 2rem;
+}
+.nav a{
+    white-space: none;
+    color: white;
+    font-size: 0.9rem;
+    text-decoration: none;
+
+}
+.nav a :hover{
+    color: rgb(56, 240, 230);
+
+    transition: 0.2s;
+    text-shadow: 2px 2px 10px cyan;
+    /* border-bottom: 2px solid red; */
+}
+.nav-links li :hover{
+    border-bottom: 2px solid red;
+    transition: 0.5s;
+
+
+}
+.action-icons{
+    margin-left: 10px;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    font-size: 1.1rem;
+    background-color: rgba(0, 0, 0, 0.795);
+    padding: 10px;
+    /* border: 1px solid cyan; */
+    /* border: 2px solid rgba(0, 255, 255, 0.514); */
+}
+.login {
+    display: flex;
+    gap: 3rem;
+}
+.login a{
+    text-decoration: none;
+    color: cyan;
+    font-size: 1rem;
+}
+.login i {
+    text-align: center;
+    font-size: 1.51rem ;
+}
+.logo{
+    background-color: rgba(20, 9, 9, 0.377);
+    padding: 10px;
+    border: 1px solid cyan;
+    box-shadow:1px 2px 20px cyan;
+}
+.lang i{
+    padding: 10px;
+}
+div .lang :hover{
+    background-color: rgb(4, 11, 12);
+    transition: 0.2s;
+    cursor: pointer;
+    color: cyan;
+    text-shadow: 2px 2px 5px cyan;
+}
+
+/* *Header nav */
+
+
+/* !Section1  */
+
+
+
+.section1 {
+    min-width: 100vh;
+    margin: 0 auto;
+    align-content: center;
+    padding-top: 5rem;
+    padding-bottom: 10rem;
+    margin-bottom: 1rem;
+    max-width: 95%;
+    Height: 100%;
+    margin-top: 2rem;
+    background: rgba(0, 0, 0, 0.911);
+ 
+
+
+}
+
+.section1 .bold_intro{
+    padding-top: 2rem;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 3rem;
+}
+
+.section1 .bold_intro p{
+    font-size: 1.3rem;
+    color: rgb(163, 167, 167);
+    padding: 1rem;
+    padding-bottom: 6rem;
+}
+
+.html_logo {
+    background:linear-gradient(20deg, rgb(76, 204, 236), rgb(86, 224, 160));
+}
+.html_logo img{
+    
+    padding-top: 2rem;
+    width: 30%;
+    height: auto;
+    
+    /* transform:translate(120%); */
+}
+.section1 .intro{
+    padding-top: 4rem;
+    display: flex;
+    align-items: center;
+    padding-left: 5rem;
+}
+
+div .intro-text{
+    padding-top: 1rem;
+    padding-left: 5rem;
+    font-size: 1rem;
+    width: 70%;
+    text-align: right;
+    text-shadow: 2px 2px 5px #0c0e0d;
+}
+.intro-text p{
+    color: cyan;
+}
+.img1{
+    margin-left: 4rem;
+    max-width: 100%;  
+}
+
+.img1 :after {
+    content: '';  
+    background-image:
+    linear-gradient(
+      to right, 
+      red, 
+      #f06d06, 
+      rgb(255, 255, 0), 
+      green);
+
+}
+.img1 img{
+    max-width: 90%;
+    max-height: auto;
+   
+}
+.join-btn{
+    padding-right: 0.5rem;
+    padding-top: 3rem;
+
+}
+.join-btn button {
+    padding: 20px;
+    font-family:'Poppins', sans-serif;
+    border: 2px solid rgb(199, 202, 202);
+    background-color: rgba(0, 0, 0, 0.671);
+    border-radius: 30px;
+    box-shadow: 2px 2px 10px rgb(189, 192, 192);
+    color: white;
+    font-size: 1rem;
+}
+.join-btn button:hover{
+    border: 2px solid cyan;
+    box-shadow: 2px 2px 10px cyan;
+    transition: 10s;
+    cursor: pointer;
+    background: linear-gradient(20deg, rgb(107, 202, 226), rgb(86, 224, 160));
+}
+
+@media (min-width: 250px) and (max-width: 600px){
+  .section1 .intro{
+    display: block;
+  }
+  div .intro-text{
+    text-align: center;
+  }
+  .join-btn{
+    padding-bottom:2rem ;}
+  .img1{
+    margin: 0 auto}
+  
+.nav-items{
+    align-items:center ;
+    display: block;
+    gap: 5rem;
+  }
+  .nav ul{
+    justify-content: center;
+    align-items: center;}
+  .logo{
+    text-align: center;
+    font-size: 4rem;
+    box-shadow:1px 2px 5px cyan;
+  }
+  .login {
+    justify-content: center;
+    align-items: center;
+    }
+  .lang {
+    justify-content: center;
+    align-items: center;}
+.action-icons{
+  justify-content: center;
+    align-items: center;
+}
+  
+.section1 {
+  padding-top: 10rem;
+}
+}
+
+/*!section 2  */
+.section2{
+    background: rgb(1, 10, 6);
+    min-width: 100vh;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 5rem;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+    max-width: 95%;
+    Height: 40%;
+    margin-top: 1rem;
+   
+}
+.section2 i{
+    justify-content: center;
+    font-size: 3rem;
+    gap: 3rem;
+    margin: 3rem;
+    color: rgb(255, 255, 255);
+   
+
+    
+}
+.logos{
+    display: flex;
+    background-color: rgb(95, 9, 9);
+    width: 100%;
+    align-items: center;
+justify-content: center;
+    
+
+
+}
+.section2 i:hover{
+    transform: scale(2, 2);
+    transition: 0.5s;
+}
+.section2 h1{
+    text-align: center;
+    padding:2rem;
+    font-size: 3rem;
+    color: linear-gradient(20deg, rgb(107, 202, 226), rgb(86, 224, 160));
+    padding-top: 5rem;
+
+}
+.section_row{
+    display:flex;
+    gap: 2rem;
+    padding: 3rem;
+    flex-direction:row;
+
+}
+.intro2{
+    flex-basis: 50%;
+    border-radius: 20px;
+    margin-bottom: 10%;
+    position: relative;
+    overflow-x: hidden;
+    cursor:pointer;
+    
+    
+}
+.intro2:hover{
+    transform: scale(110%);
+    transition: 0.3s;
+    border: 2px solid cyan ;
+    box-shadow: 2px 2px 10px cyan;
+}
+
+.intro2 img{
+    width: 100%;
+    height: 100%;
+
+}
+
+.intro-text2{
+    background:rgba(0, 0, 0, 0.671);
+    position: absolute;
+    height: 50%;
+    width: 100%;
+    bottom:0%;
+    left: 0%;
+    
+}
+.intro-text2 P{
+    color: cyan;
+    text-align: left;
+    padding-left: 2rem;
+    padding-top: 5px;
+}
+.intro-text2 h1{
+    text-align: left;
+    font-size:1rem ;
+    color: white;
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
+}
+.footer{
+    min-width: 100vh;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    height: 11rem;
+    background-color: black;
+    
+}
+.footer_items{
+    display:block;
+    text-align: center;
+    margin: 2rem;
+    padding-top: 2rem;
+    
+}
+.footer_items h1 p{
+    margin: 5rem;
+}
+.social_icons{
+    padding: 1rem;
+    
+
+}
+.social_icons i{
+    color: cyan;
+    padding: 2rem;
+    font-size: 1.5rem;
+    
+}
