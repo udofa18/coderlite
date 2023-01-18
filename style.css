@@ -2,24 +2,23 @@
     margin: 0;
     padding: 0;
 }
-html{
-    font-family: 'Poppins', sans-serif;
 
-}
+
 body {
+  font-family: 'Poppins', sans-serif;
     width: 100%;
     color: white;
     background: linear-gradient(20deg, rgb(7, 75, 102), rgb(107, 202, 226), rgb(86, 224, 160));
     background-repeat: no-repeat;
-    background-size:200vh;
-    ;
+   
 }
 
 .header{
-   width: 100%;
-    font-size: 1.9rem;
+   width: 100vw;
+    font-size: 1.5rem;
     background: rgba(0, 0, 0, 0.849);
     position: fixed;
+  z-index: 1;
     display:block;
 
 
@@ -119,14 +118,12 @@ div .lang :hover{
 
 
 .section1 {
-    min-width: 100vh;
+    min-width: 100vw;
     margin: 0 auto;
     align-content: center;
     padding-top: 5rem;
     padding-bottom: 10rem;
-    margin-bottom: 1rem;
-    max-width: 95%;
-    Height: 100%;
+    margin-bottom: 1rem;   
     margin-top: 2rem;
     background: rgba(0, 0, 0, 0.911);
  
@@ -138,7 +135,7 @@ div .lang :hover{
     padding-top: 2rem;
     margin: 0 auto;
     text-align: center;
-    font-size: 3rem;
+    font-size: 2rem;
 }
 
 .section1 .bold_intro p{
@@ -163,7 +160,7 @@ div .lang :hover{
     padding-top: 4rem;
     display: flex;
     align-items: center;
-    padding-left: 5rem;
+  
 }
 
 div .intro-text{
@@ -220,30 +217,62 @@ div .intro-text{
     cursor: pointer;
     background: linear-gradient(20deg, rgb(107, 202, 226), rgb(86, 224, 160));
 }
-
+.nav-item-small
+{
+  display: none;
+}
 @media (min-width: 250px) and (max-width: 600px){
+  .nav-items{
+    display: none;
+  }
+  .nav-item-small{
+    height: 10px;
+    padding: 2rem;
+    display: flex;
+    text-align:right;
+    position: relative;
+  }
+  .nav-small.open{
+    
+   background-color: rgb(95, 9, 9);
+   display: block; 
+    margin-left: 50%;
+       margin-top: 10%;
+    position: absolute;
+  }
+  .nav-item-small i{
+  margin-left:  50%;
+    font-size: 2rem;
+   
+  }
+  .nav-small li{
+    margin: 1rem;
+    color: white;
+    list-style: none;
+  }
+  .nav-small a{
+    color: yellow;
+     text-decoration: none;
+  }
   .section1 .intro{
+    width:100vw;
     display: block;
   }
   div .intro-text{
     text-align: center;
+    margin: 0 auto;
+    padding-left: 0;
   }
   .join-btn{
     padding-bottom:2rem ;}
   .img1{
     margin: 0 auto}
-  
-.nav-items{
-    align-items:center ;
-    display: block;
-    gap: 5rem;
-  }
-  .nav ul{
-    justify-content: center;
-    align-items: center;}
+
+
   .logo{
+    margin: 0 autol;
     text-align: center;
-    font-size: 4rem;
+    font-size: 2rem;
     box-shadow:1px 2px 5px cyan;
   }
   .login {
@@ -261,25 +290,38 @@ div .intro-text{
 .section1 {
   padding-top: 10rem;
 }
+.section2 h1{
+    
+    font-size: 2rem !important;
+}
+  .section_row {
+    display:block  !important;
+    gap: 2rem;
+    padding: 3rem;
+}
+  .intro-text2 h1{
+ font-size: 1rem !important;  
+    padding-top: 5px !important;
+    padding-bottom: 5px !important;
+}
 }
 
 /*!section 2  */
 .section2{
     background: rgb(1, 10, 6);
-    min-width: 100vh;
+    min-width: 100vw;
     margin: 0 auto;
     text-align: center;
     padding-top: 5rem;
     padding-bottom: 1rem;
     margin-bottom: 1rem;
-    max-width: 95%;
     Height: 40%;
     margin-top: 1rem;
    
 }
 .section2 i{
     justify-content: center;
-    font-size: 3rem;
+    font-size: 3fr;
     gap: 3rem;
     margin: 3rem;
     color: rgb(255, 255, 255);
@@ -290,9 +332,8 @@ div .intro-text{
 .logos{
     display: flex;
     background-color: rgb(95, 9, 9);
-    width: 100%;
+    width: 100vw;
     align-items: center;
-justify-content: center;
     
 
 
@@ -305,11 +346,11 @@ justify-content: center;
     text-align: center;
     padding:2rem;
     font-size: 3rem;
-    color: linear-gradient(20deg, rgb(107, 202, 226), rgb(86, 224, 160));
     padding-top: 5rem;
 
 }
 .section_row{
+  position: inherit;
     display:flex;
     gap: 2rem;
     padding: 3rem;
@@ -321,7 +362,8 @@ justify-content: center;
     border-radius: 20px;
     margin-bottom: 10%;
     position: relative;
-    overflow-x: hidden;
+    
+    
     cursor:pointer;
     
     
@@ -329,8 +371,8 @@ justify-content: center;
 .intro2:hover{
     transform: scale(110%);
     transition: 0.3s;
-    border: 2px solid cyan ;
-    box-shadow: 2px 2px 10px cyan;
+    border: 1px solid cyan ;
+
 }
 
 .intro2 img{
@@ -342,7 +384,6 @@ justify-content: center;
 .intro-text2{
     background:rgba(0, 0, 0, 0.671);
     position: absolute;
-    height: 50%;
     width: 100%;
     bottom:0%;
     left: 0%;
@@ -352,17 +393,16 @@ justify-content: center;
     color: cyan;
     text-align: left;
     padding-left: 2rem;
-    padding-top: 5px;
+    
 }
 .intro-text2 h1{
     text-align: left;
     font-size:1rem ;
     color: white;
-    padding-top: 1rem;
-    padding-bottom: 0.5rem;
+    padding-top: 0.5rem;
 }
 .footer{
-    min-width: 100vh;
+    min-width: 100vw;
     margin: 0 auto;
     justify-content: center;
     align-items: center;

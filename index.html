@@ -14,7 +14,7 @@
 <body>
    <header class="header">
         <nav class="nav-items">
-            <div class="logo">_>CodeLite<_</div>
+            <div class="logo" > >CodeLite< </div>  
             <div class="nav">
                 <ul>
                  <div class="nav-link"> <a href="#"> <li>Home</li></a> </div>
@@ -36,7 +36,7 @@
                     <i class="ri-search-2-line"></i>
                 </div>
             </div>
-            <d  iv class="login">
+            <div class="login">
                 <a href="#">
                 <i class="ri-user-fill"></i>
                 
@@ -47,8 +47,32 @@
                  <i class="ri-global-line"></i>
                  </a>
             </div>
-        </nav>
-  </header> 
+            </div>
+              
+    </nav>
+
+       <div class="nav-item-small">
+            <div class="logo-small">_>CodeLite<_</div>
+             <i class="ri-menu-3-line"></i> 
+             <div class="nav-small">
+                <ul>
+                 <div class="nav-link-small"> <a href="#"> <li>Home</li></a> </div>
+                 <div class="nav-link-small"> <a href="#"> <li>HTML/CSS</li></a> </div>
+                 <div class="nav-link-small"> <a href="#"> <li>JavaScript</li></a> </div>
+                 <div class="nav-link-small"> <a href="#"> <li>Projects</li></a> </div>
+                 <div class="nav-link-small"> <a href="#"> <li>Jobs</li></a> </div>
+                 <div class="nav-link-small"> <a href="#"> <li>Chat</li></a> </div>
+                 </ul>
+             
+            </div>
+            
+           
+            </div>
+       </div>
+            
+              
+        
+  </header>
   <br> <br>
    <section class="section1">
     <div class="bold_intro">
@@ -91,7 +115,7 @@
                 <img src="question-mark-g9e9afaa7b_1920.jpg">
                 <div class="intro-text2">
                 <h1>Need Help with html/CSS/JavaScript? </h1>
-                <br>
+                
                 <p>Ask the Community for Help</p>
             
             </div></div>
@@ -100,7 +124,7 @@
                    <img src="8512.shutterstock_162360971.jpg">
                    <div class="intro-text2">
                    <h1>Need a Job or wish to hire a Dev?</h1>
-                   <br>
+                  
                    <p>See our List of Jobs and Experienced Personnel waiting to jump at any task</p>
                    
                </div></div>
@@ -109,7 +133,7 @@
                 <img src="monitor-g0be60ba1a_1920.jpg">
                 <div class="intro-text2">
                 <h1>Take a look at other Codes/Projects and get Ideas </h1>
-                <br>
+             
                 <p>Learn from Others. No man is an Island of knowledge</p>
             </div></div>
 
@@ -135,8 +159,14 @@
 
          </div>
      </footer>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/material-design-lite/1.3.0/material.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.6.1/d3.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/reveal.js"></script>
+     <script>
+      let btn = document.querySelector(".ri-menu-3-line");
+      let menu = document.querySelector(".nav-small");
+
+      btn.addEventListener("click", () => {
+        menu.classList.toggle("open");
+      });
+    </script>
+
 </body>
 </html>
